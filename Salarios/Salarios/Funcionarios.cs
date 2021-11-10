@@ -10,7 +10,7 @@ namespace Salarios
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public double Salario { get;  set; }
+        public double Salario { get; set; }
 
         //Metodo de incrementar o salario
         public void incrementarSalario(double porcentagem)
