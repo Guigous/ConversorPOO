@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace Loja_POO
 {
     class Produtos
+        
     {
+        //Classe Base
         public string Nome { get; set; }
         public double Preco { get; set; }
-
+        
 
 
 
@@ -19,8 +21,20 @@ namespace Loja_POO
         {
             Nome = nome;
             Preco = preco;
+           
+        }
+
+        //Metodo Etiquetas
+        public virtual string Etiqueta()
+        {
+            string etiqueta = Nome + " - R$ " + Preco;
+            return etiqueta;
+
         }
     }
+
+
+
 
    
     

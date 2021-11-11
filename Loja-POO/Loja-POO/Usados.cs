@@ -10,12 +10,18 @@ namespace Loja_POO
     {
         public string Data { get; set; }
 
-
+        //Subclasse
         public Usados(string nome, double preco, string data)
         : base(nome, preco)
         {
-            data = data.ToString();
+            Data = data;
             
+        }
+        //Metodo Etiquetas
+        public override string Etiqueta()
+        {
+            string etiqueta = Nome + " ( Usado ) - R$ " + Preco + " (Fabricado: " + Data + ")";
+            return etiqueta;
         }
     }
 }
